@@ -4,6 +4,7 @@
   "description": "Convert data structure to definition schema.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./*.js",
     "test": "jest",
     "test-cov": "jest --coverage"
   },
