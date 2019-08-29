@@ -13,6 +13,10 @@
     "transform",
     "convert"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhinDeng/map-convert.git"
+  },
   "author": "dengjhin@gmail.com",
   "license": "ISC",
   "devDependencies": {
