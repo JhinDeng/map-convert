@@ -1,0 +1,22 @@
+{
+  "name": "map-convert",
+  "version": "1.0.0",
+  "description": "Convert data structure to definition schema.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-cov": "jest --coverage"
+  },
+  "keywords": [
+    "map",
+    "transform",
+    "convert"
+  ],
+  "author": "dengjhin@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-google": "^0.13.0",
+    "jest": "^24.9.0"
+  }
+}
