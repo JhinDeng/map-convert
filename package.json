@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./*.js",
     "test": "jest",
-    "test-cov": "jest --coverage"
+    "test-cov": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "keywords": [
     "map",
@@ -16,6 +16,7 @@
   "author": "dengjhin@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.6",
     "eslint": "^6.2.2",
     "eslint-config-google": "^0.13.0",
     "jest": "^24.9.0"

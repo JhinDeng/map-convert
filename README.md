@@ -3,6 +3,7 @@
 convert data structure to definition schema.
 
 [![Build Status](https://travis-ci.org/JhinDeng/map-convert.svg?branch=master)](https://travis-ci.org/JhinDeng/map-convert)
+[![Coverage Status](https://coveralls.io/repos/github/JhinDeng/map-convert/badge.svg?branch=master)](https://coveralls.io/github/JhinDeng/map-convert?branch=master)
 
 > inspired by [map-transform](https://www.npmjs.com/package/map-transform), but map-transform is too complex to use to me. so I implement a simple one.
 
