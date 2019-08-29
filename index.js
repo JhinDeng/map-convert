@@ -22,12 +22,12 @@ function render(template, context) {
 }
 
 /**
- * mapTransform
+ * mapConvert
  * @param {Object} source source Data
  * @param {*} schema definition schema
  * @return {*}
  */
-function mapTransform(source, schema) {
+function mapConvert(source, schema) {
   let ret = {};
 
   switch (Object.prototype.toString.call(schema)) {
@@ -35,11 +35,11 @@ function mapTransform(source, schema) {
       for (const key in schema) {
         /* istanbul ignore next */
         if (!Object.prototype.hasOwnProperty.call(schema, key)) ret[key] = '';
-        else ret[key] = mapTransform(source, schema[key]);
+        else ret[key] = mapConvert(source, schema[key]);
       }
       break;
     case '[object Array]':
-      ret = schema.map((itemSchema) => mapTransform(source, itemSchema));
+      ret = schema.map((itemSchema) => mapConvert(source, itemSchema));
       break;
     case '[object String]':
       ret = render(schema, source);
@@ -51,5 +51,5 @@ function mapTransform(source, schema) {
   return ret;
 }
 
-module.exports = mapTransform;
-exports.mapTransform = mapTransform;
+module.exports = mapConvert;
+exports.mapConvert = mapConvert;
