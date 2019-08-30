@@ -2,6 +2,7 @@
 
 convert data structure to definition schema.
 
+[![NPM version](https://img.shields.io/npm/v/map-convert.svg?style=flat-square)](https://www.npmjs.com/package/map-convert)
 [![Build Status](https://travis-ci.org/JhinDeng/map-convert.svg?branch=master)](https://travis-ci.org/JhinDeng/map-convert)
 [![Coverage Status](https://coveralls.io/repos/github/JhinDeng/map-convert/badge.svg?branch=master)](https://coveralls.io/github/JhinDeng/map-convert?branch=master)
 
