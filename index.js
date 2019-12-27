@@ -33,9 +33,9 @@ function mapConvert(source, schema) {
   switch (Object.prototype.toString.call(schema)) {
     case '[object Object]':
       for (const key in schema) {
-        /* istanbul ignore next */
-        if (!Object.prototype.hasOwnProperty.call(schema, key)) ret[key] = '';
-        else ret[key] = mapConvert(source, schema[key]);
+        if (Object.prototype.hasOwnProperty.call(schema, key)) {
+          ret[key] = mapConvert(source, schema[key]);
+        }
       }
       break;
     case '[object Array]':
