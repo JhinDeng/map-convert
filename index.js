@@ -46,7 +46,6 @@ function mapConvert(source, schema) {
       break;
     case '[object Function]':
       ret = schema(source);
-      console.log(ret);
       break;
     default:
       ret = schema;
