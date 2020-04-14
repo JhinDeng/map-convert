@@ -1,6 +1,6 @@
 {
   "name": "map-convert",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Convert data structure to definition schema.",
   "main": "index.js",
   "scripts": {

@@ -78,3 +78,16 @@ test('convert array to array', () => {
     say: 'I am female',
   }]);
 });
+
+test('convert data use function', () => {
+  const source = {
+    name: 'Jhin',
+  };
+  const def = {
+    name: {
+      description: (data) => `I am ${data.name}`,
+    },
+  };
+  const data = mapTransform(source, def);
+  expect(data.name.description).toBe('I am Jhin');
+});
